@@ -1,0 +1,9 @@
+# Universal5422
+ro.hardware=universal5422
+ro.chipname=exynos5422
+ro.arch=exynos5422
+ro.boot.bootdevice=12200000.dwmmc0
+ro.lcd_min_brightness=0
+ro.lcd_brightness=162
+ro.sf.lcd_density=480
+persist.sys.usb.config=mtp,adb

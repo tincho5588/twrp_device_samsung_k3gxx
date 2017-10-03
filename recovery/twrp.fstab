@@ -1,0 +1,11 @@
+/boot			emmc	/dev/block/platform/12200000.dwmmc0/by-name/BOOT		flags=backup=1;display="Boot"
+/recovery		emmc	/dev/block/platform/12200000.dwmmc0/by-name/RECOVERY	flags=backup=1;display="Recovery"
+/system			ext4	/dev/block/platform/12200000.dwmmc0/by-name/SYSTEM		flags=backup=1;display="System"
+/data			ext4	/dev/block/platform/12200000.dwmmc0/by-name/USERDATA	length=-16384
+/cache			ext4	/dev/block/platform/12200000.dwmmc0/by-name/CACHE
+/preload		ext4	/dev/block/platform/12200000.dwmmc0/by-name/HIDDEN		flags=display="Preload";wipeingui;backup=1
+/modem			emmc	/dev/block/platform/12200000.dwmmc0/by-name/RADIO		flags=backup=1;display="Baseband"
+/efs			ext4	/dev/block/platform/12200000.dwmmc0/by-name/EFS			flags=backup=1;display="EFS"
+/misc			emmc	/dev/block/platform/12200000.dwmmc0/by-name/OTA
+/external_sd	auto	/dev/block/mmcblk1p1 /dev/block/mmcblk1					flags=display="Micro SDcard";storage;wipeingui;removable
+/usb-otg		vfat	/dev/block/sda1 /dev/block/sda							flags=display="USB-OTG";storage;wipeingui;removable
